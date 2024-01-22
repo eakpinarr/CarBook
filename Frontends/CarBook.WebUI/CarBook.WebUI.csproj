@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="bin\**" />
+    <Compile Remove="Views\Shared\Components - Copy\**" />
+    <Content Remove="bin\**" />
+    <Content Remove="Views\Shared\Components - Copy\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <EmbeddedResource Remove="Views\Shared\Components - Copy\**" />
+    <None Remove="bin\**" />
+    <None Remove="Views\Shared\Components - Copy\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Views\Shared\Components\_AboutUsComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_BecomeADriverComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_FooterAddressComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_FooterUILayoutComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_HeadUILayoutComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_MainCoverUILayoutComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_NavbarUILayoutComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_ScriptUILayoutComponentPartial\Default.cshtml" />
+    <None Include="Views\Shared\Components\_TestimonialComponentPartial\Default.cshtml" />
+    <None Include="wwwroot\carbook-master\.DS_Store" />
+    <None Include="wwwroot\carbook-master\css\.DS_Store" />
+    <None Include="wwwroot\carbook-master\css\bootstrap\.DS_Store" />
+    <None Include="wwwroot\carbook-master\css\css\.DS_Store" />
+    <None Include="wwwroot\carbook-master\fonts\.DS_Store" />
+    <None Include="wwwroot\carbook-master\fonts\flaticon\.DS_Store" />
+    <None Include="wwwroot\carbook-master\fonts\flaticon\font\.DS_Store" />
+    <None Include="wwwroot\carbook-master\fonts\ionicons\fonts\.DS_Store" />
+    <None Include="wwwroot\carbook-master\images\.DS_Store" />
+    <None Include="wwwroot\carbook-master\js\.DS_Store" />
+    <None Include="wwwroot\carbook-master\scss\.DS_Store" />
+    <None Include="wwwroot\carbook-master\scss\bootstrap\.DS_Store" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\CarBook.Application\CarBook.Application.csproj" />
+    <ProjectReference Include="..\..\Core\CarBook.Domain\CarBook.Domain.csproj" />
+    <ProjectReference Include="..\..\Presentation\CarBook.WebApi\CarBook.WebApi.csproj" />
+    <ProjectReference Include="..\CarBook.DTO\CarBook.DTO.csproj" />
+  </ItemGroup>
+
+</Project>

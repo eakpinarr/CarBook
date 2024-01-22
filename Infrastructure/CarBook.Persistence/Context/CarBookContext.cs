@@ -27,9 +27,11 @@ namespace CarBook.Persistence.Context
         public DbSet<FooterAddress> FooterAddresses { get; set; }
         public DbSet<Location> Locations { get; set; }
         public DbSet<Pricing> Pricings { get; set; }
-        public DbSet<Services> Services { get; set; }
+        public DbSet<Service> Services { get; set; }
         public DbSet<SocialMedia> SocialMedias { get; set; }
         public DbSet<Testimonial> Testimonials { get; set; }
-
+        public DbSet<Author> Authors { get; set; }
+        public DbSet<Blog> Blogs { get; set; }    
+        public DbSet<TagCloud> TagClouds { get; set; }
     }
 }
